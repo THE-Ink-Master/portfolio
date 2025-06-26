@@ -15,7 +15,14 @@
 
     </style>
   </head>
-  <body onload="darkmodecheck()" ></body>
+  <body onload="darkmodecheck()" >
+  <script>
+    function darkmodecheck() {
+    var theme = window.localStorage.getItem('theme');
+    if(theme) document.documentElement.setAttribute('theme', theme);
+    }
+  </script>
+  </body>
   <center>
   Hello!
   <p>
@@ -31,12 +38,6 @@
     var element = document.body;
     element.classList.toggle("dark-mode");
     localStorage.setItem("theme", "dark");
-    }
-  </script>
-  <script>
-    function darkmodecheck() {
-    var theme = window.localStorage.getItem('theme');
-    if(theme) document.documentElement.setAttribute('theme', theme);
     }
   </script>
 </html>

@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>
+      Jack Kley's portfolio
+    </title>
+    <style>
+      body {
+        font-size: larger;
+        background-color: white;
+        color: black;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+    <link rel="icon" href="./Images/icon.png">
+  </head>
+  <body onload="darkmodecheck()" >
+  <script>
+    function darkmodecheck() {
+    var theme = window.localStorage.getItem('theme');
+    if(theme) document.documentElement.setAttribute('theme', theme);
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var theme = localStorage.getItem("theme");
+      if (theme) {
+        document.body.className += theme;
+    }
+  });
+  </script>
+  </body>
+  <button onclick="window.location.href = 'index.html';" style="font-size:20px; background-color:black; color:white; border-radius:5px; border-color:white ;">
+    Home
+  </button>
+ </html>

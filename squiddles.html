@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>
+      Jack Kley's portfolio - Squiddles discord bot
+    </title>
+    <style>
+      body {
+        font-size: larger;
+        background-color: white;
+        color: black;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+
+    </style>
+    <link rel="icon" href="./Images/icon.png">
+  </head>
+  <body onload="darkmodecheck()" >
+  <script>
+    function darkmodecheck() {
+    var theme = window.localStorage.getItem('theme');
+    if(theme) document.documentElement.setAttribute('theme', theme);
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var theme = localStorage.getItem("theme");
+      if (theme) {
+        document.body.className += theme;
+    }
+  });
+  </script>
+  </body>
+  <button onclick="window.location.href = 'index.html';" style="font-size:20px; background-color:black; color:white; border-radius:5px; border-color:white ;">
+    Home
+  </button>
+  <center>
+    Welcome to the page for the Squiddles discord bot!
+    <p>
+    I am the dev of the Squiddles discord bot, which currently is still a WIP.
+    </p>
+    <p>
+    The Squiddles discord bot can currently: play a audio file in a vc, stop playing the audio file and it can also send gifs.
+    </p>
+    <p>
+    I do not know what else to add to the Squiddles discord bot, which is why it is still a WIP.
+    </p>
+    <p>
+    The Squiddles discord bot is owned by me and I have been the only to make changes to it so far.
+    </p>
+    <p>
+    Also since the Squddles discord bot is not yet public, it is not up 24/7.
+    </p>
+    <p>
+    <img alt="" src="Images/squiddles.png">
+    </p>
+  </center>
+ </html>

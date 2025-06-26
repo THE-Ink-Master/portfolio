@@ -15,15 +15,14 @@
 
     </style>
   </head>
+  <body onload="darkmodecheck()" ></body>
   <center>
   Hello!
   <p>
   My name is Jack Kley and this is my portfolio.
   </p>
   <p>
-    <button onclick="darkmode ()">
-      toggle dark made
-    </button>
+    Dark mode: <input type="checkbox" onclick="darkmode()">
   </p>
   </center>
   
@@ -31,6 +30,13 @@
     function darkmode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
+    localStorage.setItem("theme", "dark");
+    }
+  </script>
+  <script>
+    function darkmodecheck() {
+    var theme = window.localStorage.getItem('theme');
+    if(theme) document.documentElement.setAttribute('theme', theme);
     }
   </script>
 </html>

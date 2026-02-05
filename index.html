@@ -3,17 +3,7 @@
     <title>
       Jack Kley's portfolio
     </title>
-    <style>
-      body {
-        font-size: larger;
-        background-color: white;
-        color: black;
-      }
-      .dark-mode {
-        background-color: black;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./Images/icon.png">
   </head>
   <body onload="darkmodecheck()" >
@@ -23,30 +13,45 @@
     if(theme) document.documentElement.setAttribute('theme', theme);
     }
   </script>
+<body onload="window.location.href = '';">
+</body>
   </body>
-    <button onclick="darkmode()" style="font-size:20px; background-color:black; color:white; border-radius:5px; border-color:white ;">
+  <div class="navBar">
+    <a onclick="window.location.href = 'index.html';" class="h1">
+      Home
+    </a>
+    <div class="verticalLine"></div>
+    <a onclick="window.location.href = 'squiddles.html';">
+      Squiddles
+    </a>
+    <a onclick="window.location.href = 'sfmposters.html';">
+      SFM Posters
+    </a>
+    <a onclick="window.location.href = 'fred01.html';">
+      FRED-01 (Robot/Animatronic)
+    </a>
+    <a onclick="window.location.href = 'photo portfolio.html';">
+      Photography Portfolio
+    </a>
+    <div class="verticalLine"></div>
+    <a onclick="darkmode()">
       Toggle dark mode
-    </button>
+    </a>
+  </div>
   <center>
-  <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
+  <p class="text">
   Hello!
   </p>
-  <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
-  My name is Jack Kley and this is my portfolio.
+  <p class="text">
+    My name is Jack Kley and this is my portfolio.
   </p>
-  <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
-    This is the home page, click any one of the buttons below to have a look at my work.
+  <p class="text">
+    This is the home page, click any one of the buttons above to have a look at my work.
   </p>
-  <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
-    <button onclick="window.location.href = 'squiddles.html';" style="font-size:20px; background-color:yellow; border-radius:5px; border-color:white;">
-      Squiddles - the discord bot
-    </button>
-    <button onclick="window.location.href = 'sfmposters.html';" style="font-size:20px; background-image:linear-gradient(to right, orange, blue); border-radius:5px; border-color:white;">
-      SFM Posters - may take a bit to load
-    </button>
+  <p class="text" style="color: blue;">
+    Website only designed for desktop and not mobile!
   </p>
   </center>
-  
   <script>
     function darkmode() {
     var element = document.body;

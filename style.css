@@ -1,0 +1,75 @@
+body {
+  font-size: larger;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+    background-color: #24242477;
+    /*color: white;*/
+    padding: 0.5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    position: static;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.popUp {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 15px;
+    padding: 0px 5%;
+    margin: 10% 5%;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.popUp h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*color: white;*/
+    padding: 3%;
+}
+
+.popUp h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*color: white;*/
+}
+
+.navbar .verticalLine {
+    border-left: 3px solid rgb(50, 50, 50);
+    height: 50;
+}
+
+.navbar a {
+    /*color: white;*/
+    text-decoration: none;
+    padding: 16px 10px;
+    font-size: large;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.navbar .home {
+    color: white;
+    text-decoration: none;
+    padding: 11px 15px;
+    font-size: x-large;
+}
+
+.text {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20;
+}

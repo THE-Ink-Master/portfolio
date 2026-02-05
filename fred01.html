@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>
+      Jack Kley's portfolio - MB-FRED-01
+    </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Images/icon.png">
+  </head>
+  <body onload="darkmodecheck()" >
+  <script>
+    function darkmodecheck() {
+    var theme = window.localStorage.getItem('theme');
+    if(theme) document.documentElement.setAttribute('theme', theme);
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var theme = localStorage.getItem("theme");
+      if (theme) {
+        document.body.className += theme;
+    }
+  });
+  </script>
+<body onload="window.location.href = '';">
+</body>
+  </body>
+  <div class="navBar">
+    <a onclick="window.location.href = 'index.html';" class="h1">
+      Home
+    </a>
+    <div class="verticalLine"></div>
+    <a onclick="window.location.href = 'squiddles.html';">
+      Squiddles
+    </a>
+    <a onclick="window.location.href = 'sfmposters.html';">
+      SFM Posters
+    </a>
+    <a onclick="window.location.href = 'fred01.html';">
+      FRED-01 (Robot/Animatronic)
+    </a>
+    <a onclick="window.location.href = 'photo portfolio.html';">
+      Photography Portfolio
+    </a>
+  </div>
+  <center>
+    <p class="text">
+      FRED-01 is an animatronic made by me, and is based on Freddy Fazbear from the video game called Five Nights at Freddy's.
+    </p>
+    <p class="text">
+      All parts of MB-FRED-01 were made in <a href="https://www.blender.org/">Blender</a>, the specific version isn't available as I am always on the latest version of Blender on Steam.
+    </p>
+    <p class="text">
+      Currently, I am completely redesigning FRED-01 because prototype 1 was mainly just a proof of concept, prototype 2 improves on prototype 1 and makes it an actually good animatronic.
+    </p>
+    <p class="text">
+      Below are images of the first prototype of FRED-01.
+    </p>
+    <img alt="" src="Images/fred01endo.png" height="240">
+    <img alt="" src="Images/fred01head.png" height="240">
+    <img alt="" src="Images/fred01full.png" height="240">
+    <p class="text">
+      Below is an image comparing prototype 1 (left) to prototype 2 (right).
+    </p>
+    <img alt="" src="Images/fred01v1v2comp.png" height="240">
+    <p></p>
+        <p class="text">
+      Q&A/FAQ
+    </p>
+    <p class="text">
+      <b><i>What does FRED-01 stand for?</i></b>
+    </p>
+    <p class="text">
+      The FRED part is a cut down version of "Freddy" because FRED-01 is based off of Freddy Fazbear, and 01 is the first version of the robot(not including prototype versions).
+    </p>
+    <p></p>
+    <p class="text" style="padding-top: 15px;">
+      Have a question about FRED-01 you want answered? <a href="https://forms.gle/tp5Yb8duebeSmHbv7">Put it here</a> and I'll make sure to answer it!
+    </p>
+  </center>
+</html>

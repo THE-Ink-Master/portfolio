@@ -3,18 +3,7 @@
     <title>
       Jack Kley's portfolio - SFM Posters
     </title>
-    <style>
-      body {
-        font-size: larger;
-        background-color: white;
-        color: black;
-      }
-      .dark-mode {
-        background-color: black;
-        color: white;
-      }
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./Images/icon.png">
   </head>
   <body onload="darkmodecheck()" >
@@ -31,22 +20,38 @@
     }
   });
   </script>
-  </body>
-  <button onclick="window.location.href = 'index.html';" style="font-size:20px; background-color:black; color:white; border-radius:5px; border-color:white ;">
-    Home
-  </button>
+  <div class="navBar">
+    <a onclick="window.location.href = 'index.html';" class="h1">
+      Home
+    </a>
+    <div class="verticalLine"></div>
+    <a onclick="window.location.href = 'squiddles.html';">
+      Squiddles
+    </a>
+    <a onclick="window.location.href = 'sfmposters.html';">
+      SFM Posters
+    </a>
+    <a onclick="window.location.href = 'fred01.html';">
+      FRED-01 (Robot/Animatronic)
+    </a>
+    <a onclick="window.location.href = 'photo portfolio.html';">
+      Photography Portfolio
+    </a>
+  </div>
   <center>
-    <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
+    <p class="text">
     Welcome to the page for my SFM Posters!
     </p>
-    <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
-      SFM is short for Source Filmmaker
+    <p class="text">
+      SFM is short for Source Filmmaker.
     </p>
-    <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
-      SFM is a tool that allows you to make posters and animations
+    <p class="text">
+      SFM is a tool that allows you to make posters and animations.
     </p>
-    <p style="font-family:Georgia, 'Times New Roman', Times, serif;">
-      These are my 5 most recent SFM Posters (having all of them would lag out some device, so I decided to only include 5 of my most recent posters).
+    <p class="text">
+      These are a few of my most favourite SFM Posters.
     </p>
   </center>
+  <img alt="" src="Images/sunset.png" height="240">
+  <img alt="" src="Images/fnaf10year.png" height="240">
  </html>

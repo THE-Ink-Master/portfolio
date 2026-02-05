@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>
+      Jack Kley's portfolio - Photography portfolio
+    </title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Images/icon.png">
+  </head>
+  <body onload="darkmodecheck()" >
+  <script>
+    function darkmodecheck() {
+    var theme = window.localStorage.getItem('theme');
+    if(theme) document.documentElement.setAttribute('theme', theme);
+    }
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var theme = localStorage.getItem("theme");
+      if (theme) {
+        document.body.className += theme;
+    }
+  });
+  </script>
+<body onload="window.location.href = '';">
+</body>
+  </body>
+  <div class="navBar">
+    <a onclick="window.location.href = 'index.html';" class="h1">
+      Home
+    </a>
+    <div class="verticalLine"></div>
+    <a onclick="window.location.href = 'squiddles.html';">
+      Squiddles
+    </a>
+    <a onclick="window.location.href = 'sfmposters.html';">
+      SFM Posters
+    </a>
+    <a onclick="window.location.href = 'fred01.html';">
+      FRED-01 (Robot/Animatronic)
+    </a>
+    <a onclick="window.location.href = 'photo portfolio.html';">
+      Photography Portfolio
+    </a>
+  </div>
+  <center>
+    <p class="text">
+      There's nothing to see here yet.
+    </p>
+    <!--<img alt="" src="Images/temp.png" height="240">-->
+  </center>
+</html>

@@ -12,13 +12,6 @@
     var theme = window.localStorage.getItem('theme');
     if(theme) document.documentElement.setAttribute('theme', theme);
     }
-
-    document.addEventListener("DOMContentLoaded", function(event) {
-      var theme = localStorage.getItem("theme");
-      if (theme) {
-        document.body.className += theme;
-    }
-  });
   </script>
   </body>
   <div class="navBar">
@@ -37,6 +30,10 @@
     </a>
     <a onclick="window.location.href = 'photo portfolio.html';">
       Photography Portfolio
+    </a>
+    <div class="verticalLine"></div>
+    <a onclick="darkmode()">
+      Toggle dark mode
     </a>
   </div>
   <center>
@@ -65,4 +62,23 @@
     <img alt="" src="Images/squiddles.png">
     </p>
   </center>
+  <script>
+    function darkmode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    if (element.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark-mode");
+      } else {
+        localStorage.setItem("theme", "");
+      }
+    }
+      
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var theme = localStorage.getItem("theme");
+      if (theme) {
+        document.body.className += theme;
+    }
+  });
+  </script>
  </html>

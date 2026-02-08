@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>
+      Jack Kley's portfolio - Media
+    </title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="icon" href="./Images/icon.png">
+  </head>
+  <body onload="darkmodecheck()" >
+  <script>
+    function darkmodecheck() {
+    var theme = window.localStorage.getItem('theme');
+    if(theme) document.documentElement.setAttribute('theme', theme);
+    }
+  </script>
+<body onload="window.location.href = '';">
+</body>
+  </body>
+  <div class="navBar">
+    <a onclick="window.location.href = 'index.html';" class="h1">
+      Home
+    </a>
+    <div class="verticalLine"></div>
+    <a onclick="window.location.href = 'squiddles.html';">
+      Squiddles
+    </a>
+    <a onclick="window.location.href = 'sfmposters.html';">
+      SFM Posters
+    </a>
+    <a onclick="window.location.href = 'fred01.html';">
+      FRED-01 (Robot/Animatronic)
+    </a>
+    <a onclick="window.location.href = 'photo portfolio.html';">
+      Photography Portfolio
+    </a>
+    <a onclick="window.location.href = 'media.html';">
+      Media
+    </a>
+    <div class="verticalLine"></div>
+    <a onclick="darkmode()">
+      Toggle dark mode
+    </a>
+  </div>
+  <center>
+    <p class="text">
+      There's nothing to see here yet.
+    </p>
+  </center>
+  <script>
+    function darkmode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+
+    if (element.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark-mode");
+      } else {
+        localStorage.setItem("theme", "");
+      }
+    }
+      
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var theme = localStorage.getItem("theme");
+      if (theme) {
+        document.body.className += theme;
+    }
+  });
+  </script>
+</html>

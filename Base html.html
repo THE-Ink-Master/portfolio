@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>
       Jack Kley's portfolio - 
@@ -10,53 +10,51 @@
     
   </head>
   <body onload="darkmodecheck()" onload="window.location.href = '';">
-  <script>
-    function darkmodecheck() {
-    var theme = window.localStorage.getItem('theme');
-    if(theme) document.documentElement.setAttribute('theme', theme);
-    }
-  </script>
-  <div class="navBar">
-    <a onclick="window.location.href = 'index';" class="h1">
-      Home
-    </a>
-    <div class="verticalLine"></div>
-    <div class="dropdown">
-      <button class="dropbtn">☰</button>
-      <div class="dropdown-content">
-        <a> content</a>
-        <a> content2</a>
+    
+    <script>
+      function darkmodecheck() {
+      var theme = window.localStorage.getItem('theme');
+      if(theme) document.documentElement.setAttribute('theme', theme);
+      }
+    </script>
+    <div class="navBar">
+      <a onclick="window.location.href = 'index';" class="h1">
+        Home
+      </a>
+      <div class="verticalLine"></div>
+      <div class="dropdown">
+        <button class="dropbtn">☰</button>
+        <div class="dropdown-content">
+          <a> content</a>
+          <a> content2</a>
+        </div>
       </div>
+      <a onclick="window.location.href = 'squiddles';" class="navButton">
+        Squiddles
+      </a>
+      <a onclick="window.location.href = 'posters';" class="navButton">
+        Posters
+      </a>
+      <a onclick="window.location.href = 'fred01';" class="navButton">
+        FRED-01 (Robot/Animatronic)
+      </a>
+      <a onclick="window.location.href = 'mars rover';" class="navButton">
+        1/4 scale mars rover
+      </a>
+      <a onclick="window.location.href = 'photo portfolio';" class="navButton">
+        Photography Portfolio
+      </a>
+      <a onclick="window.location.href = 'media';" class="navButton">
+        Media
+      </a>
+      <div class="verticalLine"></div>
+      <a onclick="darkmode()">
+        Toggle dark mode
+      </a>
     </div>
-    <a onclick="window.location.href = 'squiddles';" class="navButton">
-      Squiddles
-    </a>
-    <a onclick="window.location.href = 'posters';" class="navButton">
-      Posters
-    </a>
-    <a onclick="window.location.href = 'fred01';" class="navButton">
-      FRED-01 (Robot/Animatronic)
-    </a>
-    <a onclick="window.location.href = 'mars rover';" class="navButton">
-      1/4 scale mars rover
-    </a>
-    <a onclick="window.location.href = 'photo portfolio';" class="navButton">
-      Photography Portfolio
-    </a>
-    <a onclick="window.location.href = 'media';" class="navButton">
-      Media
-    </a>
-    <div class="verticalLine"></div>
-    <a onclick="darkmode()">
-      Toggle dark mode
-    </a>
-  </div>
-  <center>
     <p class="text">
       
     </p>
-  </center>
-  </body>
   <script>
     function darkmode() {
     var element = document.body;
@@ -76,4 +74,5 @@
     }
   });
   </script>
+  </body>
 </html>

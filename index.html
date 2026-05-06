@@ -17,31 +17,51 @@
 <body onload="window.location.href = '';">
 </body>
   </body>
-  <div class="navBar">
-    <a onclick="window.location.href = 'index';" class="h1">
-      Home
-    </a>
-    <div class="verticalLine"></div>
-    <a onclick="window.location.href = 'squiddles';">
-      Squiddles
-    </a>
-    <a onclick="window.location.href = 'posters';">
-      Posters
-    </a>
-    <a onclick="window.location.href = 'fred01';">
-      FRED-01 (Robot/Animatronic)
-    </a>
-    <a onclick="window.location.href = 'mars rover';">
-      1/4 scale mars rover
-    </a>
-    <a onclick="window.location.href = 'photo portfolio';">
-      Photography Portfolio
-    </a>
-    <div class="verticalLine"></div>
-    <a onclick="darkmode()">
-      Toggle dark mode
-    </a>
-  </div>
+    <div class="navBar">
+      <a onclick="window.location.href = 'index';" class="h1">
+        Home
+      </a>
+      <div class="verticalLine"></div>
+      <div class="dropdown">
+        <button class="dropbtn">☰</button>
+        <div class="dropdown-content">
+          <a onclick="window.location.href = 'squiddles';" class="navButton">
+            Squiddles
+          </a>
+          <a onclick="window.location.href = 'posters';" class="navButton">
+            Posters
+        </a>
+        <a onclick="window.location.href = 'fred01';" class="navButton">
+          FRED-01 (Robot/Animatronic)
+        </a>
+        <a onclick="window.location.href = 'mars rover';" class="navButton">
+          1/4 scale mars rover
+        </a>
+        <a onclick="window.location.href = 'photo portfolio';" class="navButton">
+          Photography Portfolio
+        </a>
+        </div>
+      </div>
+      <a onclick="window.location.href = 'squiddles';" class="navButton">
+        Squiddles
+      </a>
+      <a onclick="window.location.href = 'posters';" class="navButton">
+        Posters
+      </a>
+      <a onclick="window.location.href = 'fred01';" class="navButton">
+        FRED-01 (Robot/Animatronic)
+      </a>
+      <a onclick="window.location.href = 'mars rover';" class="navButton">
+        1/4 scale mars rover
+      </a>
+      <a onclick="window.location.href = 'photo portfolio';" class="navButton">
+        Photography Portfolio
+      </a>
+      <div class="verticalLine"></div>
+      <a onclick="darkmode()">
+        Toggle dark mode
+      </a>
+    </div>
   <center>
   <p class="text">
   Hello!
@@ -53,7 +73,10 @@
     This is the home page, click any one of the buttons above to have a look at my work.
   </p>
   <p class="text" style="color: blue;">
-    Website only designed for desktop and not mobile!
+    Mobile support is here!
+  </p>
+  <p class="text">
+    if you find any bugs or issues then please let me know on <a href="https://github.com/THE-Ink-Master/portfolio/issues">Github</a>
   </p>
   </center>
   <script>

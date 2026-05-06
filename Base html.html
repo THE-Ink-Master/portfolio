@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>
       Jack Kley's portfolio - 
@@ -9,16 +9,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     
   </head>
-  <body onload="darkmodecheck()" >
+  <body onload="darkmodecheck()" onload="window.location.href = '';">
   <script>
     function darkmodecheck() {
     var theme = window.localStorage.getItem('theme');
     if(theme) document.documentElement.setAttribute('theme', theme);
     }
   </script>
-<body onload="window.location.href = '';">
-</body>
-  </body>
   <div class="navBar">
     <a onclick="window.location.href = 'index';" class="h1">
       Home

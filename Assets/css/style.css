@@ -1,5 +1,5 @@
 body {
-  font-size: clamp(20%, 3vw, 35px);
+  font-size: clamp(20%, 2vh, 35px);
   background-color: black;
   color: white;
 }
@@ -60,7 +60,7 @@ body {
     /*color: white;*/
     text-decoration: none;
     padding: 16px 10px;
-    font-size: clamp(20%, 3.5vw, 35px);;
+    font-size: clamp(10%, 2.5vh, 20px);;
 }
 
 .navbar a:hover {
@@ -72,7 +72,7 @@ body {
     color: white;
     text-decoration: none;
     padding: 11px 15px;
-    font-size: x-large;
+    font-size: clamp(20%, 3vh, 24px);;
 }
 
 .navButton {
@@ -88,8 +88,8 @@ body {
 .dropbtn {
   background-color: inherit;
   color: inherit;
-  padding: 16px;
-  font-size: 16px;
+  padding: 2vh 10;
+  font-size: clamp(20%, 3vh, 24px);;
   font: inherit;
   border: none;
 }
@@ -142,7 +142,7 @@ body {
 
 .text {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 20;
+    font-size: clamp(20%, 3vh, 24px);;
 }
 
 .image {

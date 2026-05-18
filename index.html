@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
-      Jack Kley's portfolio
-    </title>
-    <link rel="stylesheet" href="./Assets/css/style.css">
-    <link rel="icon" href="./Images/icon.png">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta charset="UTF-8">
-  </head>
-  <body onload="darkmodecheck()" >
+
+<head>
+  <title>
+    Jack Kley's portfolio
+  </title>
+  <link rel="stylesheet" href="./Assets/css/style.css">
+  <link rel="icon" href="./Images/icon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+
+<body onload="darkmodecheck()">
   <script>
     function darkmodecheck() {
-    var theme = window.localStorage.getItem('theme');
-    if(theme) document.documentElement.setAttribute('theme', theme);
+      var theme = window.localStorage.getItem('theme');
+      if (theme) document.documentElement.setAttribute('theme', theme);
     }
   </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body onload="window.location.href = '';">
-</body>
-  </body>
     <div class="navbar">
       <a onclick="window.location.href = 'index';" class="h1">
         Home
@@ -33,16 +31,16 @@
           </a>
           <a onclick="window.location.href = 'posters';" class="navButton">
             Posters
-        </a>
-        <a onclick="window.location.href = 'fred01';" class="navButton">
-          FRED-01 (Robot/Animatronic)
-        </a>
-        <a onclick="window.location.href = 'mars rover';" class="navButton">
-          1/4 scale mars rover
-        </a>
-        <a onclick="window.location.href = 'photo portfolio';" class="navButton">
-          Photography Portfolio
-        </a>
+          </a>
+          <a onclick="window.location.href = 'fred01';" class="navButton">
+            FRED-01 (Robot/Animatronic)
+          </a>
+          <a onclick="window.location.href = 'mars rover';" class="navButton">
+            1/4 scale mars rover
+          </a>
+          <a onclick="window.location.href = 'photo portfolio';" class="navButton">
+            Photography Portfolio
+          </a>
         </div>
       </div>
       <a onclick="window.location.href = 'squiddles';" class="navButton">
@@ -65,40 +63,40 @@
         Toggle dark mode
       </a>
     </div>
-  <center>
-  <p class="text">
-  Hello!
-  </p>
-  <p class="text">
-    My name is Jack Kley and this is my portfolio.
-  </p>
-  <p class="text">
-    This is the home page, click any one of the buttons above to have a look at my work.
-  </p>
-  <p class="text" style="color: blue;">
-    Mobile support is here!
-  </p>
-  <p class="text">
-    if you find any bugs or issues then please let me know on <a href="https://github.com/THE-Ink-Master/portfolio/issues">Github</a>
-  </p>
-  </center>
-  <script>
-    function darkmode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+      <p class="text">
+        Hello!
+      </p>
+      <p class="text">
+        My name is Jack Kley and this is my portfolio.
+      </p>
+      <p class="text">
+        This is the home page, click any one of the buttons above to have a look at my work.
+      </p>
+      <p class="text" style="color: blue;">
+        Mobile support is here!
+      </p>
+      <p class="text">
+        if you find any bugs or issues then please let me know on <a
+          href="https://github.com/THE-Ink-Master/portfolio/issues">Github</a>
+      </p>
+    <script>
+      function darkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
 
-    if (element.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark-mode");
-      } else {
-        localStorage.setItem("theme", "");
+        if (element.classList.contains("dark-mode")) {
+          localStorage.setItem("theme", "dark-mode");
+        } else {
+          localStorage.setItem("theme", "");
+        }
       }
-    }
-      
-    document.addEventListener("DOMContentLoaded", function(event) {
-      var theme = localStorage.getItem("theme");
-      if (theme) {
-        document.body.className += theme;
-    }
-  });
-  </script>
+
+      document.addEventListener("DOMContentLoaded", function (event) {
+        var theme = localStorage.getItem("theme");
+        if (theme) {
+          document.body.className += theme;
+        }
+      });
+    </script>
+  </body>
 </html>

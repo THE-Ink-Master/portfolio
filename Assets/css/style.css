@@ -61,6 +61,12 @@ body {
   max-width: 100%;
 }
 
+.imgbox {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .left {
   float: left;
   width: 20%;
@@ -119,6 +125,7 @@ body {
 }
 
 .text {
+  text-align: center;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: clamp(20%, 3vh, 24px);
 }

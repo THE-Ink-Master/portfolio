@@ -12,12 +12,6 @@
 </head>
 
 <body onload="darkmodecheck()">
-  <script>
-    function darkmodecheck() {
-      var theme = window.localStorage.getItem('theme');
-      if (theme) document.documentElement.setAttribute('theme', theme);
-    }
-  </script>
   <div class="navbar">
     <a onclick="window.location.href = 'index';" class="h1">
       Home
@@ -88,7 +82,7 @@
     Below is an image comparing prototype 1 (left) to prototype 2 (right).
   </p>
   <div class="imgbox">
-  <img alt="" src="Images/fred01v1v2comp.png" height="240">
+    <img alt="" src="Images/fred01v1v2comp.png" height="240">
   </div>
   <p></p>
   <p class="text">
@@ -106,24 +100,7 @@
     Have a question about FRED-01 you want answered? <a href="https://forms.gle/tp5Yb8duebeSmHbv7">Put it here</a> and
     I'll make sure to answer it!
   </p>
-  <script>
-    function darkmode() {
-      var element = document.body;
-      element.classList.toggle("dark-mode");
-
-      if (element.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark-mode");
-      } else {
-        localStorage.setItem("theme", "");
-      }
-    }
-
-    document.addEventListener("DOMContentLoaded", function (event) {
-      var theme = localStorage.getItem("theme");
-      if (theme) {
-        document.body.className += theme;
-      }
-    });
+  <script src="darkmode.js">
   </script>
 </body>
 

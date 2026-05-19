@@ -10,12 +10,6 @@
     <meta charset="UTF-8">
   </head>
   <body onload="darkmodecheck()" >
-  <script>
-    function darkmodecheck() {
-    var theme = window.localStorage.getItem('theme');
-    if(theme) document.documentElement.setAttribute('theme', theme);
-    }
-  </script>
     <div class="navbar">
       <a onclick="window.location.href = 'index';" class="h1">
         Home
@@ -78,23 +72,6 @@
     <img alt="" src="Images/floatingphoto.png" height="240">
     <img alt="" src="Images/IMG_4052.JPG" height="240">
     </div>
-  <script>
-    function darkmode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-
-    if (element.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark-mode");
-      } else {
-        localStorage.setItem("theme", "");
-      }
-    }
-      
-    document.addEventListener("DOMContentLoaded", function(event) {
-      var theme = localStorage.getItem("theme");
-      if (theme) {
-        document.body.className += theme;
-    }
-  });
+  <script src="darkmode.js">
   </script>
 </html>

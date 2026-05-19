@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
-      Jack Kley's portfolio - the Squiddles discord bot
-    </title>
-    <link rel="stylesheet" href="./Assets/css/style.css">
-    <link rel="icon" href="./Images/icon.png">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta charset="UTF-8">
-  </head>
-  <body onload="darkmodecheck()" >
-  <script>
-    function darkmodecheck() {
-    var theme = window.localStorage.getItem('theme');
-    if(theme) document.documentElement.setAttribute('theme', theme);
-    }
-  </script>
-  </body>
-    <div class="navbar">
-      <a onclick="window.location.href = 'index';" class="h1">
-        Home
-      </a>
-      <div class="verticalLine"></div>
-      <div class="dropdown">
-        <button class="dropbtn">☰</button>
-        <div class="dropdown-content">
-          <a onclick="window.location.href = 'squiddles';" class="navButton">
-            Squiddles
-          </a>
-          <a onclick="window.location.href = 'posters';" class="navButton">
-            Posters
+
+<head>
+  <title>
+    Jack Kley's portfolio - the Squiddles discord bot
+  </title>
+  <link rel="stylesheet" href="./Assets/css/style.css">
+  <link rel="icon" href="./Images/icon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+
+<body onload="darkmodecheck()">
+  <div class="navbar">
+    <a onclick="window.location.href = 'index';" class="h1">
+      Home
+    </a>
+    <div class="verticalLine"></div>
+    <div class="dropdown">
+      <button class="dropbtn">☰</button>
+      <div class="dropdown-content">
+        <a onclick="window.location.href = 'squiddles';" class="navButton">
+          Squiddles
+        </a>
+        <a onclick="window.location.href = 'posters';" class="navButton">
+          Posters
         </a>
         <a onclick="window.location.href = 'fred01';" class="navButton">
           FRED-01 (Robot/Animatronic)
@@ -40,69 +35,55 @@
         <a onclick="window.location.href = 'photo portfolio';" class="navButton">
           Photography Portfolio
         </a>
-        </div>
       </div>
-      <a onclick="window.location.href = 'squiddles';" class="navButton">
-        Squiddles
-      </a>
-      <a onclick="window.location.href = 'posters';" class="navButton">
-        Posters
-      </a>
-      <a onclick="window.location.href = 'fred01';" class="navButton">
-        FRED-01 (Robot/Animatronic)
-      </a>
-      <a onclick="window.location.href = 'mars rover';" class="navButton">
-        1/4 scale mars rover
-      </a>
-      <a onclick="window.location.href = 'photo portfolio';" class="navButton">
-        Photography Portfolio
-      </a>
-      <div class="verticalLine-dark"></div>
-      <a onclick="darkmode()">
-        Toggle dark mode
-      </a>
     </div>
-    <p class="text">
+    <a onclick="window.location.href = 'squiddles';" class="navButton">
+      Squiddles
+    </a>
+    <a onclick="window.location.href = 'posters';" class="navButton">
+      Posters
+    </a>
+    <a onclick="window.location.href = 'fred01';" class="navButton">
+      FRED-01 (Robot/Animatronic)
+    </a>
+    <a onclick="window.location.href = 'mars rover';" class="navButton">
+      1/4 scale mars rover
+    </a>
+    <a onclick="window.location.href = 'photo portfolio';" class="navButton">
+      Photography Portfolio
+    </a>
+    <div class="verticalLine-dark"></div>
+    <a onclick="darkmode()">
+      Toggle dark mode
+    </a>
+  </div>
+  <p class="text">
     Welcome to the page for the Squiddles Discord bot!
-    </p>
-    <p class="text">
+  </p>
+  <p class="text">
     I am the main dev of the Squiddles Discord bot, which is currently still a WIP.
-    </p>
-    <p class="text">
-    The Squiddles discord bot can currently: play an audio file in a voice chat, stop playing the audio file, and it can also send gifs.
-    </p>
-    <p class="text">
+  </p>
+  <p class="text">
+    The Squiddles discord bot can currently: play an audio file in a voice chat, stop playing the audio file, and it can
+    also send gifs.
+  </p>
+  <p class="text">
     I do not know what else to add to the Squiddles discord bot, which is why it is still a WIP.
-    </p>
-    <p class="text">
+  </p>
+  <p class="text">
     The Squiddles discord bot is owned by me and I have been the only to make changes to it so far.
-    </p>
-    <p class="text">
+  </p>
+  <p class="text">
     Also, since the Squddles discord bot is not yet public, it is not up 24/7.
-    </p>
-    <p class="text" style="color: yellow;">
+  </p>
+  <p class="text" style="color: yellow;">
     Development of Squiddles is being paused until Q3-Q4 2027 so I have time to work on my school work.
-    </p>
-      <div class="imgbox">
+  </p>
+  <div class="imgbox">
     <img alt="" src="Images/squiddles.png" class="image">
-    </div>
-  <script>
-    function darkmode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-
-    if (element.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark-mode");
-      } else {
-        localStorage.setItem("theme", "");
-      }
-    }
-      
-    document.addEventListener("DOMContentLoaded", function(event) {
-      var theme = localStorage.getItem("theme");
-      if (theme) {
-        document.body.className += theme;
-    }
-  });
+  </div>
+  <script src="darkmode.js">
   </script>
- </html>
+</body>
+
+</html>

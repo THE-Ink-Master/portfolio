@@ -131,6 +131,13 @@ body {
   font-size: clamp(20%, 3vh, 24px);
 }
 
+.bigtext {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: clamp(20%, 4vh, 35px);
+
+}
+
 .table {
   max-height: 80%;
   max-width: 80%;

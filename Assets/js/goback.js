@@ -3,5 +3,6 @@ function goback() {
   if (path.endsWith("/portfolio/") || path.endsWith("/portfolio")) {
     var newUrl = path.replace(/\/portfolio\/?$/, "");
     window.location.href = newUrl + window.location.search;
+    console.log(window.location.href);
   }
 }

@@ -1,15 +1,7 @@
 function goback() {
-  if (window.location.pathname.endsWith("/portfolio/")) {
-    var newUrl = window.location.pathname.replace("/portfolio/", "");
-    window.history.replaceState(null, null, newUrl);
-    setTimeout(() => {
-        window.location.reload();
-    }, 1000); 
-  } else if (window.location.pathname.endsWith("/portfolio")) {
-    var newUrl = window.location.pathname.replace("/portfolio", "");
-    window.history.replaceState(null, null, newUrl);
-    setTimeout(() => {
-        window.location.reload();
-    }, 1000); 
+  var path = window.location.pathname;
+  if (path.endsWith("/portfolio/") || path.endsWith("/portfolio")) {
+    var newUrl = path.replace(/\/portfolio\/?$/, "");
+    window.location.href = newUrl + window.location.search;
   }
 }

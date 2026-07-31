@@ -6,3 +6,8 @@ Everything you see in my portfolio is made by me!
 If you want to see the website, then please go to https://the-ink-master.github.io/portfolio \
 If you find any issues/bugs, then please report them to https://github.com/the-ink-master/portfolio/issues
 
+
+# IMPORTANT!!!
+
+As of 31/7/2026, the code in this repo has been moved to the-ink-master.github.io repo
+
